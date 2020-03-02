@@ -7,6 +7,7 @@ set tabstop=4 shiftwidth=4 expandtab
 set encoding=utf8
 
 " tab indentation settings
+autocmd FileType typescriptreact setlocal ts=2 sw=2 sts=0 expandtab
 autocmd FileType javascriptreact setlocal ts=2 sw=2 sts=0 expandtab
 autocmd FileType javascript setlocal ts=2 sw=2 sts=0 expandtab
 
@@ -14,13 +15,15 @@ autocmd FileType javascript setlocal ts=2 sw=2 sts=0 expandtab
 nmap <C-p> :GFiles<CR>
 
 " Buffers
-nnoremap gb :ls<CR>:b<Space>
+nnoremap gb :Buffers<CR>
 
 " General settings
 let mapleader=","
 inoremap jk <Esc>
 cnoremap jk <C-C> 
 nmap <leader><Enter> :noh<CR>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
 
 " Vim Plugs
 call plug#begin('~/.config/nvim/plugged')
@@ -35,6 +38,7 @@ Plug 'tpope/vim-fugitive'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'jiangmiao/auto-pairs'

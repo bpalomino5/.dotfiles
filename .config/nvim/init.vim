@@ -19,11 +19,19 @@ nnoremap gb :Buffers<CR>
 
 " General settings
 let mapleader=","
+" Esc from mode
 inoremap jk <Esc>
 cnoremap jk <C-C> 
+" Clear Search Highlight
 nmap <leader><Enter> :noh<CR>
+" Move cursor while in insert mode
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
+" Cycle through windows faster
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 " Vim Plugs
 call plug#begin('~/.config/nvim/plugged')

@@ -1,6 +1,6 @@
 {
     "python.autoComplete.addBrackets": true,
     "python.jediEnabled": true,
-    "coc.preferences.formatOnSaveFiletypes": ["javascript, javascriptreact, json, css"]
+    "coc.preferences.formatOnSaveFiletypes": ["*"]
 }
 
